@@ -14,7 +14,7 @@ type Options struct {
 }
 type Option func(*Options)
 
-func NewSSHClientConfig(opts ...Option) (*cssh.Client, error) {
+func NewSSHClient(opts ...Option) (*cssh.Client, error) {
 	options := &Options{
 		username:        "",
 		password:        "",
